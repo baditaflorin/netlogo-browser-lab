@@ -16,9 +16,33 @@
         "Grass regrowth introduces a slower resource cycle that can stabilize or destabilize populations."
       ],
       "defaultParameters": [
-        { "name": "initialSheep", "label": "Initial sheep", "min": 20, "max": 250, "step": 5, "default": 90, "unit": "agents" },
-        { "name": "initialWolves", "label": "Initial wolves", "min": 5, "max": 120, "step": 5, "default": 35, "unit": "agents" },
-        { "name": "grassRegrowth", "label": "Grass regrowth", "min": 1, "max": 20, "step": 1, "default": 8, "unit": "ticks" }
+        {
+          "name": "initialSheep",
+          "label": "Initial sheep",
+          "min": 20,
+          "max": 250,
+          "step": 5,
+          "default": 90,
+          "unit": "agents"
+        },
+        {
+          "name": "initialWolves",
+          "label": "Initial wolves",
+          "min": 5,
+          "max": 120,
+          "step": 5,
+          "default": 35,
+          "unit": "agents"
+        },
+        {
+          "name": "grassRegrowth",
+          "label": "Grass regrowth",
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "default": 8,
+          "unit": "ticks"
+        }
       ],
       "runtime": {
         "visualPreview": true,
@@ -51,8 +75,24 @@
         "Repeated local moves can amplify into visible global clustering."
       ],
       "defaultParameters": [
-        { "name": "density", "label": "Density", "min": 40, "max": 95, "step": 1, "default": 78, "unit": "%" },
-        { "name": "similarWanted", "label": "Similarity wanted", "min": 5, "max": 90, "step": 5, "default": 35, "unit": "%" }
+        {
+          "name": "density",
+          "label": "Density",
+          "min": 40,
+          "max": 95,
+          "step": 1,
+          "default": 78,
+          "unit": "%"
+        },
+        {
+          "name": "similarWanted",
+          "label": "Similarity wanted",
+          "min": 5,
+          "max": 90,
+          "step": 5,
+          "default": 35,
+          "unit": "%"
+        }
       ],
       "runtime": {
         "visualPreview": true,
@@ -85,8 +125,24 @@
         "Small slowdowns can propagate backward as traffic waves."
       ],
       "defaultParameters": [
-        { "name": "cars", "label": "Cars", "min": 10, "max": 80, "step": 1, "default": 38, "unit": "agents" },
-        { "name": "acceleration", "label": "Acceleration", "min": 0.01, "max": 0.2, "step": 0.01, "default": 0.06, "unit": "speed/tick" }
+        {
+          "name": "cars",
+          "label": "Cars",
+          "min": 10,
+          "max": 80,
+          "step": 1,
+          "default": 38,
+          "unit": "agents"
+        },
+        {
+          "name": "acceleration",
+          "label": "Acceleration",
+          "min": 0.01,
+          "max": 0.2,
+          "step": 0.01,
+          "default": 0.06,
+          "unit": "speed/tick"
+        }
       ],
       "runtime": {
         "visualPreview": true,
@@ -119,8 +175,24 @@
         "Other ants bias their movement toward stronger pheromone trails."
       ],
       "defaultParameters": [
-        { "name": "ants", "label": "Ants", "min": 20, "max": 160, "step": 5, "default": 75, "unit": "agents" },
-        { "name": "evaporation", "label": "Evaporation", "min": 1, "max": 20, "step": 1, "default": 7, "unit": "%/tick" }
+        {
+          "name": "ants",
+          "label": "Ants",
+          "min": 20,
+          "max": 160,
+          "step": 5,
+          "default": 75,
+          "unit": "agents"
+        },
+        {
+          "name": "evaporation",
+          "label": "Evaporation",
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "default": 7,
+          "unit": "%/tick"
+        }
       ],
       "runtime": {
         "visualPreview": true,
@@ -153,9 +225,33 @@
         "The clearing price emerges from repeated local interactions."
       ],
       "defaultParameters": [
-        { "name": "buyers", "label": "Buyers", "min": 10, "max": 120, "step": 5, "default": 50, "unit": "agents" },
-        { "name": "sellers", "label": "Sellers", "min": 10, "max": 120, "step": 5, "default": 45, "unit": "agents" },
-        { "name": "volatility", "label": "Volatility", "min": 1, "max": 20, "step": 1, "default": 6, "unit": "%/tick" }
+        {
+          "name": "buyers",
+          "label": "Buyers",
+          "min": 10,
+          "max": 120,
+          "step": 5,
+          "default": 50,
+          "unit": "agents"
+        },
+        {
+          "name": "sellers",
+          "label": "Sellers",
+          "min": 10,
+          "max": 120,
+          "step": 5,
+          "default": 45,
+          "unit": "agents"
+        },
+        {
+          "name": "volatility",
+          "label": "Volatility",
+          "min": 1,
+          "max": 20,
+          "step": 1,
+          "default": 6,
+          "unit": "%/tick"
+        }
       ],
       "runtime": {
         "visualPreview": true,

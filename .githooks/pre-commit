@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+npm run lint
+npm run fmt:check
+npx tsc --noEmit
+go vet ./cmd/... ./internal/... ./pkg/...
+gitleaks protect --staged --verbose

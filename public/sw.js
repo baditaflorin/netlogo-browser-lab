@@ -1,5 +1,9 @@
 const CACHE_NAME = 'netlogo-browser-lab-v0.1.0';
-const ASSETS = ['/netlogo-browser-lab/', '/netlogo-browser-lab/data/v1/models.json', '/netlogo-browser-lab/data/v1/models.meta.json'];
+const ASSETS = [
+  '/netlogo-browser-lab/',
+  '/netlogo-browser-lab/data/v1/models.json',
+  '/netlogo-browser-lab/data/v1/models.meta.json',
+];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)));
@@ -9,7 +13,9 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))),
+      .then((keys) =>
+        Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))),
+      ),
   );
 });
 

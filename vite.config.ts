@@ -1,5 +1,5 @@
 import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   base: '/netlogo-browser-lab/',
@@ -8,16 +8,9 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          query: ['@tanstack/react-query', 'zod'],
-        },
-      },
-    },
   },
   test: {
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
     environment: 'jsdom',
     setupFiles: './src/test/setup.ts',
     coverage: {

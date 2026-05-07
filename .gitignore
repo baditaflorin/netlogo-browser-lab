@@ -16,6 +16,7 @@ bin/
 vendor/
 *.test
 *.out
+tsconfig.tsbuildinfo
 playwright-report/
 test-results/
 .cache/
