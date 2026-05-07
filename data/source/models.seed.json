@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "v1",
+  "models": [
+    {
+      "id": "wolf-sheep-predation",
+      "title": "Wolf Sheep Predation",
+      "category": "Ecology",
+      "difficulty": "Intro",
+      "tags": ["predator-prey", "ecology", "population", "classic"],
+      "sourceUrl": "https://ccl.northwestern.edu/netlogo/models/WolfSheepPredation",
+      "license": "See upstream model Info tab",
+      "summary": "A predator-prey system where wolves, sheep, grass, energy, and reproduction interact in feedback loops.",
+      "mechanics": [
+        "Sheep gain energy by eating grass and may reproduce when energy is high.",
+        "Wolves gain energy by catching sheep and die when energy reaches zero.",
+        "Grass regrowth introduces a slower resource cycle that can stabilize or destabilize populations."
+      ],
+      "defaultParameters": [
+        { "name": "initialSheep", "label": "Initial sheep", "min": 20, "max": 250, "step": 5, "default": 90, "unit": "agents" },
+        { "name": "initialWolves", "label": "Initial wolves", "min": 5, "max": 120, "step": 5, "default": 35, "unit": "agents" },
+        { "name": "grassRegrowth", "label": "Grass regrowth", "min": 1, "max": 20, "step": 1, "default": 8, "unit": "ticks" }
+      ],
+      "runtime": {
+        "visualPreview": true,
+        "cheerpj": "Adapter ready; full NetLogo JAR artifact not bundled in v1.",
+        "webgpu": "Renderer capability probed; CPU stepping with canvas fallback in v1.",
+        "localExplain": "Static local tutor generated from model metadata."
+      },
+      "simulationKind": "wolf-sheep",
+      "teacherPrompts": [
+        "What happens if wolves reproduce faster than sheep?",
+        "Where do you see delayed feedback in the graph?"
+      ],
+      "references": {
+        "NetLogo Models Library": "https://ccl.northwestern.edu/netlogo/models/",
+        "Official source": "https://ccl.northwestern.edu/netlogo/models/WolfSheepPredation"
+      }
+    },
+    {
+      "id": "segregation",
+      "title": "Segregation",
+      "category": "Social Science",
+      "difficulty": "Intro",
+      "tags": ["emergence", "social-science", "thresholds", "classic"],
+      "sourceUrl": "https://ccl.northwestern.edu/netlogo/models/Segregation",
+      "license": "See upstream model Info tab",
+      "summary": "A Schelling-style neighborhood model showing how mild local preferences can create strong global separation.",
+      "mechanics": [
+        "Agents inspect nearby neighbors and decide whether they are satisfied.",
+        "Unsatisfied agents move to empty locations.",
+        "Repeated local moves can amplify into visible global clustering."
+      ],
+      "defaultParameters": [
+        { "name": "density", "label": "Density", "min": 40, "max": 95, "step": 1, "default": 78, "unit": "%" },
+        { "name": "similarWanted", "label": "Similarity wanted", "min": 5, "max": 90, "step": 5, "default": 35, "unit": "%" }
+      ],
+      "runtime": {
+        "visualPreview": true,
+        "cheerpj": "Adapter ready; full NetLogo JAR artifact not bundled in v1.",
+        "webgpu": "Renderer capability probed; CPU stepping with canvas fallback in v1.",
+        "localExplain": "Static local tutor generated from model metadata."
+      },
+      "simulationKind": "segregation",
+      "teacherPrompts": [
+        "Why can weak individual preference create strong group patterns?",
+        "Which slider changes the tipping point fastest?"
+      ],
+      "references": {
+        "NetLogo Models Library": "https://ccl.northwestern.edu/netlogo/models/",
+        "Official source": "https://ccl.northwestern.edu/netlogo/models/Segregation"
+      }
+    },
+    {
+      "id": "traffic-basic",
+      "title": "Traffic Basic",
+      "category": "Systems",
+      "difficulty": "Intro",
+      "tags": ["traffic", "waves", "density", "transport"],
+      "sourceUrl": "https://ccl.northwestern.edu/netlogo/models/TrafficBasic",
+      "license": "See upstream model Info tab",
+      "summary": "Cars follow simple acceleration and braking rules, revealing stop-and-go waves without any central controller.",
+      "mechanics": [
+        "Cars accelerate when space opens ahead.",
+        "Cars brake when another car is too close.",
+        "Small slowdowns can propagate backward as traffic waves."
+      ],
+      "defaultParameters": [
+        { "name": "cars", "label": "Cars", "min": 10, "max": 80, "step": 1, "default": 38, "unit": "agents" },
+        { "name": "acceleration", "label": "Acceleration", "min": 0.01, "max": 0.2, "step": 0.01, "default": 0.06, "unit": "speed/tick" }
+      ],
+      "runtime": {
+        "visualPreview": true,
+        "cheerpj": "Adapter ready; full NetLogo JAR artifact not bundled in v1.",
+        "webgpu": "Renderer capability probed; CPU stepping with canvas fallback in v1.",
+        "localExplain": "Static local tutor generated from model metadata."
+      },
+      "simulationKind": "traffic",
+      "teacherPrompts": [
+        "Can a traffic jam form without a crash?",
+        "How does density change average speed?"
+      ],
+      "references": {
+        "NetLogo Models Library": "https://ccl.northwestern.edu/netlogo/models/",
+        "Official source": "https://ccl.northwestern.edu/netlogo/models/TrafficBasic"
+      }
+    },
+    {
+      "id": "ants",
+      "title": "Ants",
+      "category": "Biology",
+      "difficulty": "Intermediate",
+      "tags": ["pheromone", "foraging", "biology", "emergence"],
+      "sourceUrl": "https://ccl.northwestern.edu/netlogo/models/Ants",
+      "license": "See upstream model Info tab",
+      "summary": "Ants lay and follow pheromone trails, creating collective foraging paths from simple local behavior.",
+      "mechanics": [
+        "Searching ants wander until they find food.",
+        "Returning ants lay pheromone that evaporates over time.",
+        "Other ants bias their movement toward stronger pheromone trails."
+      ],
+      "defaultParameters": [
+        { "name": "ants", "label": "Ants", "min": 20, "max": 160, "step": 5, "default": 75, "unit": "agents" },
+        { "name": "evaporation", "label": "Evaporation", "min": 1, "max": 20, "step": 1, "default": 7, "unit": "%/tick" }
+      ],
+      "runtime": {
+        "visualPreview": true,
+        "cheerpj": "Adapter ready; full NetLogo JAR artifact not bundled in v1.",
+        "webgpu": "Renderer capability probed; CPU stepping with canvas fallback in v1.",
+        "localExplain": "Static local tutor generated from model metadata."
+      },
+      "simulationKind": "ants",
+      "teacherPrompts": [
+        "Why do trails disappear when food is removed?",
+        "What is the tradeoff between exploration and exploitation?"
+      ],
+      "references": {
+        "NetLogo Models Library": "https://ccl.northwestern.edu/netlogo/models/",
+        "Official source": "https://ccl.northwestern.edu/netlogo/models/Ants"
+      }
+    },
+    {
+      "id": "market-dynamics",
+      "title": "Market Dynamics",
+      "category": "Economics",
+      "difficulty": "Intermediate",
+      "tags": ["economics", "market", "feedback", "prices"],
+      "sourceUrl": "https://ccl.northwestern.edu/netlogo/models/community/",
+      "license": "Curated v1 educational preview; see upstream model before redistribution",
+      "summary": "Buyers and sellers adjust behavior from local price signals, showing how volatility and liquidity emerge.",
+      "mechanics": [
+        "Buyers raise bids when they fail to buy and lower bids after easy purchases.",
+        "Sellers adjust asks from recent trades and inventory pressure.",
+        "The clearing price emerges from repeated local interactions."
+      ],
+      "defaultParameters": [
+        { "name": "buyers", "label": "Buyers", "min": 10, "max": 120, "step": 5, "default": 50, "unit": "agents" },
+        { "name": "sellers", "label": "Sellers", "min": 10, "max": 120, "step": 5, "default": 45, "unit": "agents" },
+        { "name": "volatility", "label": "Volatility", "min": 1, "max": 20, "step": 1, "default": 6, "unit": "%/tick" }
+      ],
+      "runtime": {
+        "visualPreview": true,
+        "cheerpj": "Adapter ready; full NetLogo JAR artifact not bundled in v1.",
+        "webgpu": "Renderer capability probed; CPU stepping with canvas fallback in v1.",
+        "localExplain": "Static local tutor generated from model metadata."
+      },
+      "simulationKind": "market",
+      "teacherPrompts": [
+        "When does a stable price fail to appear?",
+        "How does liquidity change volatility?"
+      ],
+      "references": {
+        "NetLogo Models Library": "https://ccl.northwestern.edu/netlogo/models/",
+        "Community models": "https://ccl.northwestern.edu/netlogo/models/community/"
+      }
+    }
+  ]
+}

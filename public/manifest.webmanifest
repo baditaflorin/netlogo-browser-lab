@@ -1,0 +1,17 @@
+{
+  "name": "NetLogo Browser Lab",
+  "short_name": "NetLogo Lab",
+  "description": "Run and understand NetLogo models in the browser without installing Java.",
+  "start_url": "/netlogo-browser-lab/",
+  "scope": "/netlogo-browser-lab/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/netlogo-browser-lab/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
