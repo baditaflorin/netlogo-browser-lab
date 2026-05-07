@@ -1,0 +1,7 @@
+title = "netlogo-browser-lab gitleaks policy"
+
+[allowlist]
+description = "Allow documented public URLs and placeholder env values."
+paths = [
+  '''package-lock\.json''',
+]

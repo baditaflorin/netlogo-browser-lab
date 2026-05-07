@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="NetLogo Browser Lab">
+  <rect width="128" height="128" rx="24" fill="#0f766e"/>
+  <path d="M28 78c17-34 39-47 72-50-22 17-30 37-31 70-11-17-23-23-41-20Z" fill="#facc15"/>
+  <circle cx="74" cy="47" r="9" fill="#f8fafc"/>
+  <path d="M31 91h70" stroke="#f8fafc" stroke-width="10" stroke-linecap="round"/>
+</svg>
