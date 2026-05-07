@@ -14,7 +14,7 @@ export default defineConfig({
     command: 'npm run preview -- --host 127.0.0.1 --port 4173',
     url: 'http://127.0.0.1:4173/netlogo-browser-lab/',
     reuseExistingServer: !process.env.CI,
-    timeout: 20_000,
+    timeout: 60_000,
   },
   projects: [
     {
