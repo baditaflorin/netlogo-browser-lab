@@ -28,7 +28,7 @@ dev:
 data:
 	go run ./cmd/build-index --source data/source/models.seed.json --out public/data/v1 --version $(VERSION)
 
-build: data
+build:
 	VITE_APP_VERSION=$(VERSION) VITE_GIT_COMMIT=$(COMMIT) VITE_GITHUB_REPOSITORY_URL=https://github.com/baditaflorin/netlogo-browser-lab VITE_PAYPAL_URL=https://www.paypal.com/paypalme/florinbadita npm run build
 	cp dist/index.html dist/404.html
 
