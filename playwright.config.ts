@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const port = Number(process.env.SMOKE_PORT ?? 45217);
+const baseURL = `http://127.0.0.1:${port}/netlogo-browser-lab/`;
+
 export default defineConfig({
   testDir: './test/e2e',
   timeout: 30_000,
@@ -7,12 +10,12 @@ export default defineConfig({
     timeout: 5_000,
   },
   use: {
-    baseURL: 'http://127.0.0.1:4173/netlogo-browser-lab/',
+    baseURL,
     trace: 'on-first-retry',
   },
   webServer: {
-    command: 'npm run preview -- --host 127.0.0.1 --port 4173',
-    url: 'http://127.0.0.1:4173/netlogo-browser-lab/',
+    command: `npm run preview -- --host 127.0.0.1 --port ${port} --strictPort`,
+    url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,
   },
